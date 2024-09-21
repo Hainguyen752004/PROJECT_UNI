@@ -1,0 +1,92 @@
+#bài 1
+import pandas as pd
+from sklearn.preprocessing import LabelEncoder
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import BernoulliNB, MultinomialNB
+from sklearn.metrics import accuracy_score, classification_report
+# Đọc file dữ liệu (Bạn cần thay đường dẫn tới file của mình)
+dataset = "D:/HK1 NĂM 3/Học Máy và ứng dụng/Thực Hành/nguyenchihai_2274802010214_lab2/Education.csv"
+data = pd.read_csv(dataset)
+# Hiển thị dữ liệu đầu tiên để kiểm tra
+print("Dữ liệu đầu tiên:")
+print(data.head())
+# Sử dụng LabelEncoder để chuyển đổi nhãn từ văn bản thành số
+label_encoder = LabelEncoder()
+data['Label_2'] = label_encoder.fit_transform(data['Label'])  # Mã hóa cột 'Label' (Positive/Negative)
+# In dữ liệu sau khi mã hóa nhãn
+print("\nDữ liệu sau khi mã hóa nhãn:")
+print(data[['Text', 'Label', 'Label_2']].head())
+# Sử dụng CountVectorizer để chuyển đổi văn bản thành ma trận đặc trưng
+vectorizer = CountVectorizer()
+X = vectorizer.fit_transform(data['Text'])  # Chuyển đổi cột 'Text' thành ma trận số
+# Cột 'Label_2' là nhãn đã mã hóa (0: Negative, 1: Positive)
+y = data['Label_2']
+# Chia dữ liệu thành tập huấn luyện và tập kiểm thử
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+# Áp dụng Bernoulli Naive Bayes
+bernoulli_nb = BernoulliNB()  # Khởi tạo mô hình Bernoulli Naive Bayes
+bernoulli_nb.fit(X_train, y_train)  # Huấn luyện mô hình
+y_pred_bernoulli = bernoulli_nb.predict(X_test)  # Dự đoán trên tập kiểm thử
+# Đánh giá kết quả Bernoulli Naive Bayes
+print("\nBernoulli Naive Bayes Results:")
+print("Accuracy:", accuracy_score(y_test, y_pred_bernoulli))
+print("Classification Report:")
+print(classification_report(y_test, y_pred_bernoulli))
+# Áp dụng Multinomial Naive Bayes
+multinomial_nb = MultinomialNB()  # Khởi tạo mô hình Multinomial Naive Bayes
+multinomial_nb.fit(X_train, y_train)  # Huấn luyện mô hình
+y_pred_multinomial = multinomial_nb.predict(X_test)  # Dự đoán trên tập kiểm thử
+# Đánh giá kết quả Multinomial Naive Bayes
+print("\nMultinomial Naive Bayes Results:")
+print("Accuracy:", accuracy_score(y_test, y_pred_multinomial))
+print("Classification Report:")
+print(classification_report(y_test, y_pred_multinomial))
+# So sánh tổng quát giữa hai mô hình
+print("\nSo sánh kết quả giữa Bernoulli và Multinomial Naive Bayes:")
+print(f"Bernoulli Naive Bayes Accuracy: {accuracy_score(y_test, y_pred_bernoulli)}")
+print(f"Multinomial Naive Bayes Accuracy: {accuracy_score(y_test, y_pred_multinomial)}")
+
+# bài 2
+import pandas as pd  
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import accuracy_score, classification_report
+
+# Tải dữ liệu từ file
+try:
+    drug_data = pd.read_csv(r"D:/HK1 NĂM 3/Học Máy và ứng dụng/Thực Hành/nguyenchihai_2274802010214_lab2/drug.csv")
+    print(drug_data.head())  # Kiểm tra vài dòng dữ liệu đầu tiên
+except Exception as e:
+    print(f"Lỗi khi đọc file CSV: {e}")
+
+
+# Mã hóa các biến phân loại
+label_encoders = {}
+for column in ['Sex', 'BP', 'Cholesterol', 'Drug']:
+    le = LabelEncoder()
+    drug_data[column] = le.fit_transform(drug_data[column])
+    label_encoders[column] = le
+
+# Tách dữ liệu thành các đặc trưng và nhãn mục tiêu
+X = drug_data.drop(columns='Drug')
+y = drug_data['Drug']
+
+# Chia dữ liệu thành tập huấn luyện và tập kiểm tra
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+# Khởi tạo mô hình Naive Bayes Gaussian
+gnb = GaussianNB()
+
+# Huấn luyện mô hình
+gnb.fit(X_train, y_train)
+
+# Dự đoán trên tập kiểm tra
+y_pred = gnb.predict(X_test)
+
+# Đánh giá mô hình
+accuracy = accuracy_score(y_test, y_pred)
+report = classification_report(y_test, y_pred, target_names=label_encoders['Drug'].classes_)
+
+accuracy, report
