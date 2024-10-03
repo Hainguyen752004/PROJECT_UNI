@@ -1,4 +1,4 @@
-Nguyễn Chí hải_2274802010214
+# Nguyễn Chí hải_2274802010214
 # Công nghệ sử dụng
  Framework: pandas (pd): dùng để xử lý dữ liệu và đọc file. Scikit-learn (sklearn) trong bài này thì có các thứ viện nhỏ của nó như là LabelEncoder,CountVectorizer,train_test_split,Naive Bayes,accuracy_score và classification_report
 ![image](https://github.com/user-attachments/assets/e129e5eb-4331-4167-8c67-be6a79110064)
