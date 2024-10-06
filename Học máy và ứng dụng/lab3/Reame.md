@@ -16,6 +16,10 @@ trong bài này thuật toán hoạt động bằng cách tính khoảng cáchgi
 ![image](https://github.com/user-attachments/assets/08e31c17-63a0-4348-b30e-f3d94877a7f2)
 ![image](https://github.com/user-attachments/assets/d0fab4b0-4d5a-4071-81fa-fe3445919ec5)
 ![image](https://github.com/user-attachments/assets/9e649666-6cb7-424c-a7a9-40805b94d212)
+# kết quả streamlit
+![image](https://github.com/user-attachments/assets/246ad89c-05e5-497a-a97a-ec6fd2bab808)
+![image](https://github.com/user-attachments/assets/46e5dd23-a933-4c93-a3e0-3d3cd4727963)
+
 
 # Bài KNNBT1
 # famework sử dụng
