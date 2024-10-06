@@ -53,6 +53,8 @@ Dựa trên các K láng giềng gần nhất, thuật toán sẽ đếm tần s
 # Kết quả
 ![image](https://github.com/user-attachments/assets/70f6860f-26dc-4932-b167-779c693c1810)
 ![image](https://github.com/user-attachments/assets/63f05527-61bc-4221-a4f7-b6a2236d616f)
+# kết quả web 
+![image](https://github.com/user-attachments/assets/a33813da-9e29-491d-8af9-82b68d65564f)
 
 
 
