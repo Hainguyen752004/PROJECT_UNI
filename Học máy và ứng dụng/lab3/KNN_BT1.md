@@ -12,7 +12,8 @@ Trong bài này, dữ liệu có thể là dữ liệu văn bản và KNN dựa 
 # lỗi khi chạy file 
 em biết là lỗi nhưng em ghi vào chỉ muốn hỏi, tuy nó lỗi sau nó vẫn ra kết quả :((( 
 ![image](https://github.com/user-attachments/assets/a0b9729c-22f5-480a-a3da-90dba11a59cd)
-![image](https://github.com/user-attachments/assets/9898af0f-7a30-45e4-927f-d8ef45bbf934)
+![image](https://github.com/user-attachments/assets/c495ff3d-9c99-4459-8a0e-4b232ed28e2b)
+
 
 
 
