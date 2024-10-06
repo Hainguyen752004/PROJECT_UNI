@@ -36,6 +36,11 @@ Trong bài này, dữ liệu có thể là dữ liệu văn bản và KNN dựa 
 em biết là lỗi nhưng em ghi vào chỉ muốn hỏi, tuy nó lỗi sau nó vẫn ra kết quả :((( 
 ![image](https://github.com/user-attachments/assets/a0b9729c-22f5-480a-a3da-90dba11a59cd)
 ![image](https://github.com/user-attachments/assets/c495ff3d-9c99-4459-8a0e-4b232ed28e2b)
+# kết quả web
+![image](https://github.com/user-attachments/assets/79ec03cc-1747-471e-94d1-98d595f2fc3b)
+![image](https://github.com/user-attachments/assets/03dc0bcd-08a5-4a17-a7ba-525b2a299128)
+
+
 
 # Bài KNNBT2
 # famework sử dụng
