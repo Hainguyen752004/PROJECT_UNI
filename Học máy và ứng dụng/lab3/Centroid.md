@@ -5,7 +5,8 @@ pandas: xử lý bảng và làm việc với dữ liệu có nhãn
 sklearn: xây dựng triển khai mô hình học máy
 # Thuật toán
 thuật toán: phân loại khoảng cách Ecuclid ( KNN ) nhưng trong bài này chỉ so sánh trung bình các lớp đã được tính
-# giải thích trong bài này thuật toán hoạt động bằng cách tính khoảng cáchgiữ mỡi điểm trong tập kiểm tra thuật toán sẽ chọn nhãn lớp tương ứng với vector trung bình có khoảng cách nhỏ nhất.
+# giải thích 
+trong bài này thuật toán hoạt động bằng cách tính khoảng cáchgiữ mỡi điểm trong tập kiểm tra thuật toán sẽ chọn nhãn lớp tương ứng với vector trung bình có khoảng cách nhỏ nhất.
 #kết quả:
 ![image](https://github.com/user-attachments/assets/ecc8ec5e-2673-4fa5-9fb4-9495818c6d19)
 ![image](https://github.com/user-attachments/assets/3f2539a5-a3ce-401b-8972-3b6d74e64ccd)
