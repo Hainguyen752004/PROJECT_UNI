@@ -33,6 +33,21 @@ em biết là lỗi nhưng em ghi vào chỉ muốn hỏi, tuy nó lỗi sau nó
 ![image](https://github.com/user-attachments/assets/a0b9729c-22f5-480a-a3da-90dba11a59cd)
 ![image](https://github.com/user-attachments/assets/c495ff3d-9c99-4459-8a0e-4b232ed28e2b)
 
+# Bài KNNBT2
+# famework sử dụng
+Numpy: làm việc với mãng và Ma trận pandas: xử lý bảng và làm việc với dữ liệu có nhãn sklearn: xây dựng triển khai mô hình học máy
+# Thuật toán
+KNN
+# Giải Thích
+tính toán khoảng cách giữa mỗi điểm kiểm tra và tất cả các điểm huấn luyện, thuật toán chọn K điểm gần nhất
+Dựa trên các K láng giềng gần nhất, thuật toán sẽ đếm tần số nhãn và chọn nhãn xuất hiện nhiều nhất làm nhãn dự đoán cho điểm kiểm tra
+# Kết quả
+![image](https://github.com/user-attachments/assets/70f6860f-26dc-4932-b167-779c693c1810)
+![image](https://github.com/user-attachments/assets/63f05527-61bc-4221-a4f7-b6a2236d616f)
+
+
+
+
 
 
 
