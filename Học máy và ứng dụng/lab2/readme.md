@@ -12,6 +12,9 @@ giải thích: đầu tiên là: Bernoulli Naive Bayes:  cái này nó hoạt đ
 
 - # Kết quả:
 ![image](https://github.com/user-attachments/assets/d747c92c-e1f9-48e0-947f-4baf6ae27c75)
+# kết quả web
+![image](https://github.com/user-attachments/assets/57c1c34a-d8ac-4d1f-9843-3300d453232f)
+
 - so sánh: vì dữ liệu không có khác biệt nhiều nên em train 2 mô hình chạy như nhau
 
 # bài 2:
@@ -27,4 +30,7 @@ Naive Bayes:,Gaussian Naive Bayes:
 Gaussian Naive Bayes  làm việc với dữ liệu số và hoạt động theo phân phối chuẩn ( em hong biết nói sao hết )
 # kết quả:
 ![image](https://github.com/user-attachments/assets/0da1627a-69af-4b85-a69c-f817c9736f6e)
+# kết quả web:
+![image](https://github.com/user-attachments/assets/b3c0c568-7fb5-4804-9cbe-665e257d479e)
+
 
