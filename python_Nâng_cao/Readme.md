@@ -23,6 +23,8 @@ Kết quả sẽ được gán vào biến result_var để hiển thị trên g
 # Kết quả
 ![image](https://github.com/user-attachments/assets/5c312731-9e13-441b-852b-970ab2de2222)
 ![image](https://github.com/user-attachments/assets/9a44d286-f280-461b-82b4-58ef7645f04a)
+# streamlit web
+![image](https://github.com/user-attachments/assets/583a3446-b561-46df-bffd-c5215f1deba9)
 
 # Tab 1
 ![image](https://github.com/user-attachments/assets/675c6dc3-57ba-494b-b44f-12e7c8c012c6)
