@@ -27,5 +27,8 @@ Activation Functions:  giúp biến đổi các giá trị đầu ra của mỗi
 ![image](https://github.com/user-attachments/assets/79f0ab94-d51a-463b-9d69-46369ca71633)
 # kết quả web 
 ![image](https://github.com/user-attachments/assets/d6ea3c95-7049-4452-81a1-4aacc4eba9aa)
+# kết quả  
+![Uploading Screenshot 2024-10-21 194119.png…]()
+
 
 
