@@ -21,15 +21,19 @@ bài tập đầu tiên
 ![image](https://github.com/user-attachments/assets/c61d8f7b-607b-40a3-aca2-00fc98ef8436)
 
 bài tập thứ 2
+
 ![image](https://github.com/user-attachments/assets/0de60fca-5a0e-475c-a01d-3f1966a435d7)
 
 bài tập vận dụng
+
 ![image](https://github.com/user-attachments/assets/a51cf1a3-6797-4a1b-8068-e14bfeb6c530)
 
 bài tập về nhà
+
 ![image](https://github.com/user-attachments/assets/24de2ab7-7a11-4d31-96da-b6dbc14eb6b3)
 
 web bài tập về nhà 
+
 ![image](https://github.com/user-attachments/assets/c26e4636-408b-4d49-a4aa-211143453dde)
 
 
