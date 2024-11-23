@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Thông tin Cá Nhân</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>XEM THÔNG TIN CÁ NHÂN</h1>
+        <div class="form-group">
+            <label for="columns">Chọn cột để hiển thị:</label>
+            <div id="columns">
+                {% for column in columns %}
+                    <label><input type="checkbox" name="column" value="{{ column }}" checked> {{ column }}</label>
+                {% endfor %}
+            </div>
+        </div>
+        <button id="load-data" class="btn btn-primary">Tải dữ liệu</button>
+        <table class="table table-bordered mt-3">
+            <thead>
+                <tr id="table-headers"></tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#load-data').click(function () {
+                const selectedColumns = $('input[name="column"]:checked').map(function () {
+                    return $(this).val();
+                }).get();
+
+                $.get('/api/data', { columns: selectedColumns }, function (response) {
+                    const { data, columns } = response;
+
+                    $('#table-headers').empty();
+                    columns.forEach(col => {
+                        $('#table-headers').append(`<th>${col}</th>`);
+                    });
+
+                    $('#table-body').empty();
+                    data.forEach(row => {
+                        const rowHTML = row.map(cell => `<td>${cell}</td>`).join('');
+                        $('#table-body').append(`<tr>${rowHTML}</tr>`);
+                    });
+                }).fail(function (error) {
+                    alert(error.responseJSON.error);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
