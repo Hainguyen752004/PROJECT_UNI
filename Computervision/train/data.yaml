@@ -1,0 +1,11 @@
+path: D:\train_plate_models_new_test\data 
+train: D:\train_plate_models_new_test\data\train\images 
+val:  D:\train_plate_models_new_test\data\valid\images 
+test: D:\train_plate_models_new_test\data\test\images 
+names:
+  0: buffalo
+  1: elephant
+  2: rhino
+  3: zebra
+
+
